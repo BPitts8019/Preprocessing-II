@@ -6,10 +6,19 @@
    
    nav {
       .custom-layout(space-between, center);
-      
+   
+      @media @mobile {
+         .custom-layout(flex-start, center, column);
+      }
+
       ul {
          width: 35%;
          .custom-layout(space-evenly);
+
+         @media @mobile {
+            margin-top: 1.6rem;
+            width: 100%;
+         }
 
          li {
             

@@ -1,8 +1,8 @@
-.custom-layout (@justify: flex-start, @align: flex-start, @direction: row) {
+.custom-layout (@justify, @align: flex-start, @direction: row, @wrap: nowrap) {
    display: flex;
+   flex-flow: @direction @wrap;
    justify-content: @justify;
    align-items: @align;
-   flex-direction: @direction;
 }
 
 .button (@text-color: black, @bg-color: magenta, @width: 100%, @padding: 0, @radius: 0) {
