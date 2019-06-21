@@ -1,1 +1,17 @@
-// Mixins in here
+.custom-layout (@justify: flex-start, @align: flex-start, @direction: row) {
+   display: flex;
+   justify-content: @justify;
+   align-items: @align;
+   flex-direction: @direction;
+}
+
+.button (@text-color: black, @bg-color: magenta, @width: 100%, @padding: 0, @radius: 0) {
+   background-color: @bg-color;
+   border-radius: @radius;
+   cursor: pointer;
+   color: @text-color;
+   font-size: 2rem;
+   text-align: center;
+   padding: @padding;
+   width: @width;
+}

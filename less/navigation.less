@@ -5,14 +5,11 @@
    
    
    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      .custom-layout(space-between, center);
       
       ul {
          width: 35%;
-         display: flex;
-         justify-content: space-evenly;
+         .custom-layout(space-evenly);
 
          li {
             
@@ -30,9 +27,4 @@
          }
       }
    }
-}
-
-header {
-   
-
 }
