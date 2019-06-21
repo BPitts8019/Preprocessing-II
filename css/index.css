@@ -227,6 +227,11 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media only screen and (max-width: 500px) {
+  body {
+    min-width: 500px;
+  }
+}
 .home .content-welcome {
   border-bottom: 2px dashed #C0C0C0;
   margin: 0;
