@@ -1,1 +1,39 @@
-// Navigation Styles here
+.header {
+   border-bottom: 2px dashed @navigation-border;
+   padding: 2rem 0;
+   width: 100%;
+   
+   
+   nav {
+      .custom-layout(space-between, center);
+   
+      @media @mobile {
+         .custom-layout(flex-start, center, column);
+      }
+
+      ul {
+         width: 35%;
+         .custom-layout(space-evenly);
+
+         @media @mobile {
+            margin-top: 1.6rem;
+            width: 100%;
+         }
+
+         li {
+            
+            a {
+               color: @font-color;
+               font-size: 1.6rem;
+               text-decoration: none;
+            }
+            a:visited {
+               color: @font-color;
+            }
+            a:hover{
+               color: @button-bg;
+            }
+         }
+      }
+   }
+}

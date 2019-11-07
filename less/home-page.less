@@ -1,4 +1,19 @@
+@media @mobile {
+   body {
+      min-width: 500px;
+   }
+}
+
 .home {
+  .content-welcome {
+    border-bottom: 2px dashed @navigation-border;
+    margin: 0;
+    padding-bottom: 1rem;
+
+    .img-content {
+      padding-bottom: 1.6rem;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,16 +21,25 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +50,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-wrap: wrap-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +70,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +85,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 85%;
+      }
+
+      .btn {
+        .button(white, @button-bg, 85%, 1rem, 15px);
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
     }
   }
 }// home
